@@ -1,0 +1,39 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+    <div class="text-center">
+    <h1 class="display-4"> <img src="/wwwroot/img/logo3.png" /></h1>
+    <hr class="bd-gray" />
+    <div class="col-6" style="margin-left:auto; margin-right:auto">
+
+        <h2 class="display-3">Sign Up</h2>
+        <div id="AlertWrite"></div>
+
+        @using (Html.BeginForm())
+        {
+            <div class="form-group">
+                <label for="exampleInputEmail1">Last Name</label>
+                <input type="text" class="form-control" name="name" aria-describedby="Email" placeholder="Enter Last Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Surname</label>
+                <input type="text" class="form-control" name="surname" aria-describedby="Surname" placeholder="Enter surname">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" name="email" aria-describedby="Email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="Password">Password</label>
+                <input type="password" class="form-control" name="password" placeholder="Password">
+            </div>
+            <button class="btn btn-danger" asp-area="" asp-controller="Home" asp-action="Login">Close</button>
+            <button class="btn btn-dark float-start" type="submit">Save</button>
+
+        }
+
+    </div>
+</div> 
+}

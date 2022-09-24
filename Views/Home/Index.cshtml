@@ -1,0 +1,39 @@
+﻿
+@section Styles {
+
+}
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="AlertWrite"></div>
+
+<form method="post" enctype="multipart/form-data" accept-charset="UTF-8">
+    <div class="card">
+        <h5 class="card-header" style="background-color:#89c429; color: white">CSV Dosyasi Yükle</h5>
+        <div class="card-body">
+            <h5 class="card-title">Bu alandan yüklenen dosyalar eşleştirme için kullanılmaktadır</h5>
+            <p class="card-text">Eşleşmesi tamamlanan dosyalar sistem tarafından belli aralıklarla kontrol edilerek veritabanına kayıt edilmektedir.</p>
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="text" name="ad" value="Deneme">
+                    <input type="file" class="custom-file-input" name="file">
+                    <label class="custom-file-label" for="file">Dosya Seç</label>
+                </div>
+                <div class="input-group-append">
+                    <button class="input-group-text" style="background-color:#89c429; color:white" type="submit">Yükle</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@Html.Raw(@ViewData["Product"])
+
+
+@section scripts {
+
+}
+

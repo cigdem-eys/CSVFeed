@@ -1,0 +1,39 @@
+Dosya Türü : CSV
+Link : https://drive.google.com/uc?export=download&id=1RmyT-xa9OuwU05OUatS5vcQNFZgo0q1i
+ 
+1.Görev: .Net MVC uygulaması
+ - Temel Kullanıcı Kayıt İşlemleri (Register - Login)
+ - Login olan kullanıcı CSV Dosyasını sisteme girebilecek ( Feed kaydı oluşturma).  
+ - Oluşturulan Feed e ait dosyanın okunması (Linki verilen bir CSV dosyasının  okunması)
+ - Okunan CSV dosyasının başıkları ile veri tabanı Product ve Image tablosunun alanlarının eşleştirilmesi. 
+ 
+
+2. Görev: Console Uygulaması - Belli zaman aralıklarında çalışacak (Örn: 1 saat)
+Belli zaman aralıklarında eşleştirmesi yapılan CSV Feed dosyasını okuyacak.
+Product ve Image tablolarına kayıtlarını  yapacak(Insert(Kayıt yoksa Insert), Update(Daha Önce Ürün eklnemiş ise Price ve Stok güncelleme)).
+ 
+Maplenecek Alanlar: 
+barcode
+price
+Stock
+name
+product_code
+Image1
+Image2
+Image3
+Image4
+Image5 
+description 
+brand	 
+category	 
+Desi
+
+Teknolojiler : 
+.Net MVC
+Entity Framework
+JQuery
+BootStrap
+
+
+
+
